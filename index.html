@@ -6,263 +6,143 @@
   <title>Excellent Cadavers — Soundtrack</title>
   <style>
     :root {
-      --bg: #d15c02;
-      --bg2: black;
+      --bg: #140000;
+      --bg2: #2b0000;
       --text: #d15c02;
-      --muted: #a58acb;
-      --accent: #5a2a82;
-      --accent2: #8e44ad;
-      --border: rgba(214, 179, 255, 0.18);
-      --card: rgba(255, 255, 255, 0.04);
-      --shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-    }
-    
-    .wrap {
-      max-width: 900px;
-      margin: 0 auto;
+      --muted: #a65a1a;
+      --accent: #7a2d00;
+      --accent2: #d15c02;
+      --border: rgba(209, 92, 2, 0.18);
+      --card: rgba(255, 120, 40, 0.04);
+      --shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
     }
 
-    h1, h2, h3 {
-      color: #d15c02; /* dark orange headings */
-      font-weight: normal;
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top, rgba(120, 0, 0, 0.35), transparent 35%),
+        linear-gradient(180deg, var(--bg2), var(--bg));
+      min-height: 100vh;
+    }
+
+    .wrap {
+      width: min(900px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 40px 0 60px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 36px;
     }
 
     h1 {
-      margin-top: 0;
-      margin-bottom: 8px;
+      margin: 0;
+      font-size: clamp(2.2rem, 5vw, 4rem);
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      text-shadow: 0 0 18px rgba(209, 92, 2, 0.25);
     }
 
-    h2 {
-      margin-top: 28px;
-      margin-bottom: 18px;
+    .section-title {
+      margin: 34px 0 14px;
+      font-size: 1.35rem;
+      color: var(--text);
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 8px;
     }
 
-    h3 {
-      margin-top: 22px;
-      margin-bottom: 6px;
-    }
-
-    p {
-      margin: 0 0 10px;
-    }
-
-    .filename {
-      color: #ff8c42; /* lighter orange for contrast */
-      margin-bottom: 6px;
-      word-break: break-all;
+    .track-list {
+      display: grid;
+      gap: 16px;
     }
 
     .track {
-      margin-bottom: 18px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 18px;
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(4px);
+    }
+
+    .track h3 {
+      margin: 0 0 6px;
+      font-size: 1.15rem;
+    }
+
+    .track p {
+      margin: 0 0 14px;
+      color: var(--muted);
+      line-height: 1.5;
+      font-size: 0.98rem;
     }
 
     audio {
       width: 100%;
-      max-width: 700px;
       display: block;
-      margin-bottom: 4px;
+      margin-bottom: 10px;
     }
 
-    a {
-      color: #ff8c42;
+    .download-link {
+      color: #ff9a4d;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(255, 154, 77, 0.35);
     }
 
-    a:hover {
-      color: #ffd2a6;
+    .download-link:hover {
+      color: #ffd9b3;
+      border-bottom-color: rgba(255, 217, 179, 0.7);
     }
 
-    .footer {
-      margin-top: 28px;
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      color: var(--muted);
       font-size: 0.95rem;
     }
   </style>
 </head>
 <body>
   <div class="wrap">
-    <h1>Excellent Cadavers</h1>
-    <h2>All Tracks</h2>
+    <header>
+      <h1>Excellent Cadavers</h1>
+    </header>
 
-    <div class="track">
-      <h3>Come On</h3>
-      <p class="filename">comeon.mp3</p>
-      <audio controls>
-        <source src="comeon.mp3" type="audio/mpeg" />
-        Your browser does not support the audio element.
-      </audio>
-      <a href="comeon.mp3" target="_blank">Open track in a new tab</a>
+    <h2 class="section-title">All Tracks</h2>
+    <div class="track-list">
+
+      <section class="track">
+        <h3>Come On</h3>
+        <p>comeon.mp3</p>
+        <audio controls preload="none">
+          <source src="comeon.mp3" type="audio/mpeg" />
+        </audio>
+        <a class="download-link" href="comeon.mp3" target="_blank">Open track in a new tab</a>
+      </section>
+
+      <section class="track">
+        <h3>Counting Stars</h3>
+        <p>countingstars.mp3</p>
+        <audio controls preload="none">
+          <source src="countingstars.mp3" type="audio/mpeg" />
+        </audio>
+        <a class="download-link" href="countingstars.mp3" target="_blank">Open track in a new tab</a>
+      </section>
+
+      <!-- COPY THIS BLOCK FOR MORE TRACKS -->
+
     </div>
 
-    <div class="track">
-      <h3>Counting Stars</h3>
-      <p class="filename">countingstars.mp3</p>
-      <audio controls>
-        <source src="countingstars.mp3" type="audio/mpeg" />
-        Your browser does not support the audio element.
-      </audio>
-      <a href="countingstars.mp3" target="_blank">Open track in a new tab</a>
-    </div>
-
-    <div class="track">
-      <h3>Dark Christmas</h3>
-      <p class="filename">darkchristmas.mp3</p>
-      <audio controls>
-        <source src="darkchristmas.mp3" type="audio/mpeg" />
-        Your browser does not support the audio element.
-      </audio>
-      <a href="darkchristmas.mp3" target="_blank">Open track in a new tab</a>
-    </div>
-
-    <div class="track">
-      <h3>Disco Groove</h3>
-      <p class="filename">discogroove.mp3</p>
-      <audio controls>
-        <source src="discogroove.mp3" type="audio/mpeg" />
-        Your browser does not support the audio element.
-      </audio>
-      <a href="discogroove.mp3" target="_blank">Open track in a new tab</a>
-    </div>
-
-    <div class="track">
-      <h3>Escaped</h3>
-      <p class="filename">escaped.mp3</p>
-      <audio controls>
-        <source src="escaped.mp3" type="audio/mpeg" />
-        Your browser does not support the audio element.
-      </audio>
-      <a href="escaped.mp3" target="_blank">Open track in a new tab</a>
-    </div>
-
-    <div class="track">
-      <h3>Flow Retro</h3>
-      <p class="filename">flowretro.mp3</p>
-      <audio controls>
-        <source src="flowretro.mp3" type="audio/mpeg" />
-        Your browser does not support the audio element.
-      </audio>
-      <a href="flowretro.mp3" target="_blank">Open track in a new tab</a>
-    </div>
-
-    <div class="track">
-      <h3>Fun Disco</h3>
-      <p class="filename">fundisco.mp3</p>
-      <audio controls>
-        <source src="fundisco.mp3" type="audio/mpeg" />
-        Your browser does not support the audio element.
-      </audio>
-      <a href="fundisco.mp3" target="_blank">Open track in a new tab</a>
-    </div>
-
-    <div class="track">
-      <h3>Funk It Dock</h3>
-      <p class="filename">funkitdock.mp3</p>
-      <audio controls>
-        <source src="funkitdock.mp3" type="audio/mpeg" />
-        Your browser does not support the audio element.
-      </audio>
-      <a href="funkitdock.mp3" target="_blank">Open track in a new tab</a>
-    </div>
-
-    <div class="track">
-      <h3>Groove</h3>
-      <p class="filename">groove.mp3</p>
-      <audio controls>
-        <source src="groove.mp3" type="audio/mpeg" />
-        Your browser does not support the audio element.
-      </audio>
-      <a href="groove.mp3" target="_blank">Open track in a new tab</a>
-    </div>
-
-    <div class="track">
-      <h3>Groovy Good</h3>
-      <p class="filename">groovygood.mp3</p>
-      <audio controls>
-        <source src="groovygood.mp3" type="audio/mpeg" />
-        Your browser does not support the audio element.
-      </audio>
-      <a href="groovygood.mp3" target="_blank">Open track in a new tab</a>
-    </div>
-
-    <div class="track">
-      <h3>High End Hustles</h3>
-      <p class="filename">highendhustles.mp3</p>
-      <audio controls>
-        <source src="highendhustles.mp3" type="audio/mpeg" />
-        Your browser does not support the audio element.
-      </audio>
-      <a href="highendhustles.mp3" target="_blank">Open track in a new tab</a>
-    </div>
-
-    <div class="track">
-      <h3>Italian Tarantella</h3>
-      <p class="filename">italiantarantella.mp3</p>
-      <audio controls>
-        <source src="italiantarantella.mp3" type="audio/mpeg" />
-        Your browser does not support the audio element.
-      </audio>
-      <a href="italiantarantella.mp3" target="_blank">Open track in a new tab</a>
-    </div>
-
-    <div class="track">
-      <h3>Library Jazz</h3>
-      <p class="filename">libraryjazz.mp3</p>
-      <audio controls>
-        <source src="libraryjazz.mp3" type="audio/mpeg" />
-        Your browser does not support the audio element.
-      </audio>
-      <a href="libraryjazz.mp3" target="_blank">Open track in a new tab</a>
-    </div>
-
-    <div class="track">
-      <h3>Lost Rap</h3>
-      <p class="filename">lostrap.mp3</p>
-      <audio controls>
-        <source src="lostrap.mp3" type="audio/mpeg" />
-        Your browser does not support the audio element.
-      </audio>
-      <a href="lostrap.mp3" target="_blank">Open track in a new tab</a>
-    </div>
-
-    <div class="track">
-      <h3>Mafia Trap</h3>
-      <p class="filename">mafiatrap.mp3</p>
-      <audio controls>
-        <source src="mafiatrap.mp3" type="audio/mpeg" />
-        Your browser does not support the audio element.
-      </audio>
-      <a href="mafiatrap.mp3" target="_blank">Open track in a new tab</a>
-    </div>
-
-    <div class="track">
-      <h3>Moonlight</h3>
-      <p class="filename">moonlight.mp3</p>
-      <audio controls>
-        <source src="moonlight.mp3" type="audio/mpeg" />
-        Your browser does not support the audio element.
-      </audio>
-      <a href="moonlight.mp3" target="_blank">Open track in a new tab</a>
-    </div>
-
-    <div class="track">
-      <h3>Music Funky</h3>
-      <p class="filename">musicfunky.mp3</p>
-      <audio controls>
-        <source src="musicfunky.mp3" type="audio/mpeg" />
-        Your browser does not support the audio element.
-      </audio>
-      <a href="musicfunky.mp3" target="_blank">Open track in a new tab</a>
-    </div>
-
-    <div class="track">
-      <h3>Take Me Back</h3>
-      <p class="filename">takemeback.mp3</p>
-      <audio controls>
-        <source src="takemeback.mp3" type="audio/mpeg" />
-        Your browser does not support the audio element.
-      </audio>
-      <a href="takemeback.mp3" target="_blank">Open track in a new tab</a>
-    </div>
-
-    <p class="footer">Hosted on GitHub Pages</p>
+    <footer>
+      <div>Hosted on GitHub Pages</div>
+    </footer>
   </div>
 </body>
 </html>
