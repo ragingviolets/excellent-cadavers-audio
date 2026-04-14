@@ -1,172 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Excellent Cadavers — Soundtrack</title>
-  <style>
-    :root {
-      --bg: #070707;
-      --panel: #111111;
-      --panel-2: #171717;
-      --text: #e8e2dc;
-      --muted: #b7aaa0;
-      --accent: #d15c02;
-      --accent-dark: #8e3700;
-      --line: #2a211b;
-      --shadow: rgba(209, 92, 2, 0.16);
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      font-family: Georgia, "Times New Roman", serif;
-      background:
-        radial-gradient(circle at top, rgba(209, 92, 2, 0.12), transparent 32%),
-        linear-gradient(to bottom, #090909 0%, #050505 100%);
-      color: var(--text);
-      min-height: 100vh;
-    }
-
-    .wrap {
-      width: min(980px, calc(100% - 32px));
-      margin: 0 auto;
-      padding: 48px 0 72px;
-    }
-
-    .hero {
-      text-align: center;
-      padding: 42px 24px 28px;
-      border: 1px solid var(--line);
-      background: linear-gradient(to bottom, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
-      box-shadow: 0 0 30px var(--shadow);
-      margin-bottom: 28px;
-    }
-
-    h1 {
-      margin: 0;
-      font-size: clamp(2.3rem, 5vw, 4.4rem);
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: #f2ebe6;
-      text-shadow: 0 0 18px rgba(209, 92, 2, 0.2);
-    }
-
-    .subtitle {
-      margin: 14px auto 0;
-      max-width: 700px;
-      color: var(--muted);
-      font-size: 1rem;
-      line-height: 1.7;
-    }
-
-    .note {
-      margin-top: 18px;
-      font-size: 0.9rem;
-      color: #cfbeb1;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-    }
-
-    .section-title {
-      margin: 34px 0 16px;
-      font-size: 1.15rem;
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-      color: #f3d8c4;
-      border-bottom: 1px solid var(--line);
-      padding-bottom: 10px;
-    }
-
-    .tracklist {
-      display: grid;
-      gap: 14px;
-    }
-
-    .track {
-      background: linear-gradient(to bottom, var(--panel), var(--panel-2));
-      border: 1px solid var(--line);
-      padding: 16px;
-      box-shadow: 0 0 18px rgba(0,0,0,0.35);
-    }
-
-    .track-header {
-      display: flex;
-      gap: 16px;
-      justify-content: space-between;
-      align-items: baseline;
-      flex-wrap: wrap;
-      margin-bottom: 10px;
-    }
-
-    .track-title {
-      margin: 0;
-      font-size: 1.1rem;
-      color: #fff3ea;
-    }
-
-    .track-meta {
-      color: var(--accent);
-      font-size: 0.88rem;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-    }
-
-    .track-desc {
-      margin: 0 0 12px;
-      color: var(--muted);
-      line-height: 1.6;
-      font-size: 0.96rem;
-    }
-
-    audio {
-      width: 100%;
-      filter: sepia(0.18) saturate(1.1);
-    }
-
-    .footer {
-      margin-top: 34px;
-      padding-top: 18px;
-      border-top: 1px solid var(--line);
-      color: #a89281;
-      font-size: 0.92rem;
-      line-height: 1.7;
-      text-align: center;
-    }
-
-    .placeholder {
-      color: #ffcfac;
-      font-style: italic;
-    }
-
-    @media (max-width: 640px) {
-      .wrap {
-        width: min(100%, calc(100% - 20px));
-        padding-top: 20px;
-      }
-
-      .hero {
-        padding: 28px 16px 22px;
-      }
-
-      .track {
-        padding: 14px;
-      }
-    }
-  </style>
-</head>
 <body>
   <div class="wrap">
     <header class="hero">
       <h1>Excellent Cadavers</h1>
-      <p class="subtitle">
-        An original soundtrack archive. Replace the sample titles, notes, and audio file links below with your own tracks, then upload this file as <strong>index.html</strong> to your GitHub Pages repo.
-      </p>
       <div class="note">Soundtrack Collection</div>
     </header>
+
+    <section>
+      <h2 class="section-title">Featured Tracks</h2>
+      <div class="tracklist">
 
         <article class="track">
           <div class="track-header">
@@ -182,7 +23,7 @@
 
         <article class="track">
           <div class="track-header">
-            <h3 class="track-title">Track One</h3>
+            <h3 class="track-title">Track Two</h3>
             <div class="track-meta">Opening Theme</div>
           </div>
           <p class="track-desc">Replace this with your description for the track, scene, or mood.</p>
@@ -194,7 +35,7 @@
 
         <article class="track">
           <div class="track-header">
-            <h3 class="track-title">Track One</h3>
+            <h3 class="track-title">Track Three</h3>
             <div class="track-meta">Opening Theme</div>
           </div>
           <p class="track-desc">Replace this with your description for the track, scene, or mood.</p>
@@ -206,7 +47,7 @@
 
         <article class="track">
           <div class="track-header">
-            <h3 class="track-title">Track One</h3>
+            <h3 class="track-title">Track Four</h3>
             <div class="track-meta">Opening Theme</div>
           </div>
           <p class="track-desc">Replace this with your description for the track, scene, or mood.</p>
@@ -218,7 +59,7 @@
 
         <article class="track">
           <div class="track-header">
-            <h3 class="track-title">Track One</h3>
+            <h3 class="track-title">Track Five</h3>
             <div class="track-meta">Opening Theme</div>
           </div>
           <p class="track-desc">Replace this with your description for the track, scene, or mood.</p>
@@ -230,7 +71,7 @@
 
         <article class="track">
           <div class="track-header">
-            <h3 class="track-title">Track One</h3>
+            <h3 class="track-title">Track Six</h3>
             <div class="track-meta">Opening Theme</div>
           </div>
           <p class="track-desc">Replace this with your description for the track, scene, or mood.</p>
@@ -242,7 +83,7 @@
 
         <article class="track">
           <div class="track-header">
-            <h3 class="track-title">Track One</h3>
+            <h3 class="track-title">Track Seven</h3>
             <div class="track-meta">Opening Theme</div>
           </div>
           <p class="track-desc">Replace this with your description for the track, scene, or mood.</p>
@@ -254,7 +95,7 @@
 
         <article class="track">
           <div class="track-header">
-            <h3 class="track-title">Track One</h3>
+            <h3 class="track-title">Track Eight</h3>
             <div class="track-meta">Opening Theme</div>
           </div>
           <p class="track-desc">Replace this with your description for the track, scene, or mood.</p>
@@ -266,7 +107,7 @@
 
         <article class="track">
           <div class="track-header">
-            <h3 class="track-title">Track One</h3>
+            <h3 class="track-title">Track Nine</h3>
             <div class="track-meta">Opening Theme</div>
           </div>
           <p class="track-desc">Replace this with your description for the track, scene, or mood.</p>
@@ -278,7 +119,7 @@
 
         <article class="track">
           <div class="track-header">
-            <h3 class="track-title">Track One</h3>
+            <h3 class="track-title">Track Ten</h3>
             <div class="track-meta">Opening Theme</div>
           </div>
           <p class="track-desc">Replace this with your description for the track, scene, or mood.</p>
@@ -290,7 +131,7 @@
 
         <article class="track">
           <div class="track-header">
-            <h3 class="track-title">Track One</h3>
+            <h3 class="track-title">Track Eleven</h3>
             <div class="track-meta">Opening Theme</div>
           </div>
           <p class="track-desc">Replace this with your description for the track, scene, or mood.</p>
@@ -302,7 +143,7 @@
 
         <article class="track">
           <div class="track-header">
-            <h3 class="track-title">Track One</h3>
+            <h3 class="track-title">Track Twelve</h3>
             <div class="track-meta">Opening Theme</div>
           </div>
           <p class="track-desc">Replace this with your description for the track, scene, or mood.</p>
@@ -314,7 +155,7 @@
 
         <article class="track">
           <div class="track-header">
-            <h3 class="track-title">Track Two</h3>
+            <h3 class="track-title">Track Thirteen</h3>
             <div class="track-meta">Character Theme</div>
           </div>
           <p class="track-desc">Add a short note here if you want.</p>
@@ -326,7 +167,7 @@
 
         <article class="track">
           <div class="track-header">
-            <h3 class="track-title">Track Three</h3>
+            <h3 class="track-title">Track Fourteen</h3>
             <div class="track-meta">Scene Theme</div>
           </div>
           <p class="track-desc">You can duplicate this whole track block as many times as you want.</p>
@@ -335,12 +176,10 @@
             Your browser does not support the audio element.
           </audio>
         </article>
-      </div>
-    </section>
 
-       <article class="track">
+        <article class="track">
           <div class="track-header">
-            <h3 class="track-title">Track Three</h3>
+            <h3 class="track-title">Track Fifteen</h3>
             <div class="track-meta">Scene Theme</div>
           </div>
           <p class="track-desc">You can duplicate this whole track block as many times as you want.</p>
@@ -349,12 +188,10 @@
             Your browser does not support the audio element.
           </audio>
         </article>
-      </div>
-    </section>
 
-      <article class="track">
+        <article class="track">
           <div class="track-header">
-            <h3 class="track-title">Track Three</h3>
+            <h3 class="track-title">Track Sixteen</h3>
             <div class="track-meta">Scene Theme</div>
           </div>
           <p class="track-desc">You can duplicate this whole track block as many times as you want.</p>
@@ -363,12 +200,10 @@
             Your browser does not support the audio element.
           </audio>
         </article>
-      </div>
-    </section>
 
-      <article class="track">
+        <article class="track">
           <div class="track-header">
-            <h3 class="track-title">Track Three</h3>
+            <h3 class="track-title">Track Seventeen</h3>
             <div class="track-meta">Scene Theme</div>
           </div>
           <p class="track-desc">You can duplicate this whole track block as many times as you want.</p>
@@ -377,12 +212,10 @@
             Your browser does not support the audio element.
           </audio>
         </article>
-      </div>
-    </section>
 
-      <article class="track">
+        <article class="track">
           <div class="track-header">
-            <h3 class="track-title">Track Three</h3>
+            <h3 class="track-title">Track Eighteen</h3>
             <div class="track-meta">Scene Theme</div>
           </div>
           <p class="track-desc">You can duplicate this whole track block as many times as you want.</p>
@@ -391,6 +224,7 @@
             Your browser does not support the audio element.
           </audio>
         </article>
+
       </div>
     </section>
 
@@ -411,4 +245,3 @@
     </footer>
   </div>
 </body>
-</html>
